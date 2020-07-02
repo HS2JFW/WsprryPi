@@ -25,7 +25,7 @@ Installation / update:
     sudo apt-get install git  
     git clone https://github.com/HS2JFW/WsprryPi.git  
     cd WsprryPi  
-    git clone https://github.com/HS2JFW/librpitx.git 
+    git clone https://github.com/F5OEO/librpitx.git 
     cd librpitx/src  
     make  
     cd ../../  
