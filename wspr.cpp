@@ -776,13 +776,12 @@ int main(const int argc, char * const argv[]) {
 		int FifoSize=40000;
 		bool usePWMSample=false;
 		static float *FreqPWM=NULL;
-		if(ngfmtest==NULL)
-		{
+	
 			ngfmtest=new ngfmdmasync(center_freq_actual,SR,14,FifoSize,true);
 			FreqPWM=(float*)malloc(Upsample*sizeof(float));
-		}
-		else
+		
 			ngfmtest->enableclk(4);
+			
 		double FreqResolution=ngfmtest->GetFrequencyResolution();
      
 		double RealFreq=ngfmtest->GetRealFrequency(0);	
@@ -826,7 +825,8 @@ int main(const int argc, char * const argv[]) {
 
         // Turn transmitter off
         ngfmtest->disableclk(4);
-
+	cleanup();
+    
         // End timestamp
         gettimeofday(&tvEnd, NULL);
         std::cout << "  TX ended at:   ";
