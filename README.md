@@ -1,5 +1,10 @@
 # Raspberry Pi bareback LF/MF/HF/VHF WSPR transmitter
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ This version is modify wspr.cpp for band hopping.                    +
++ 73 Joe/HS2JFW                                                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Makes a very simple WSPR beacon from your RasberryPi by connecting GPIO
 port to Antenna (and LPF), operates on LF, MF, HF and VHF bands from
 0 to 250 MHz.
@@ -16,9 +21,9 @@ Installation / update:
 ******
   Download and compile code:
     sudo apt-get install git
-    git clone https://github.com/F5OEO/WsprryPi.git
+    git clone https://github.com/HS2JFW/WsprryPi.git
     cd WsprryPi
-    git clone https://github.com/F5OEO/librpitx.git 
+    git clone https://github.com/HS2JFW/librpitx.git 
     cd librpitx/src  
     make
     cd ../../
