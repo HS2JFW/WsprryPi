@@ -9,13 +9,13 @@ This version is modify wspr.cpp for band hopping.
 
 Makes a very simple WSPR beacon from your RasberryPi by connecting GPIO
 port to Antenna (and LPF), operates on LF, MF, HF and VHF bands from
-0 to 250 MHz.
+0 to 250 MHz.  
 
 Compatible with the original Raspberry Pi, the Raspberry Pi 2/3, and
-the Pi Zero.
+the Pi Zero.  
 
-This version uses https://github.com/F5OEO/librpitx
-**You need to add gpu_freq=250 in /boot/config.txt. Without that transmiting is unstable"**
+This version uses https://github.com/F5OEO/librpitx  
+**You need to add gpu_freq=250 in /boot/config.txt. Without that transmiting is unstable"**  
 
 
 ******
